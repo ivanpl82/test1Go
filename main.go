@@ -8,5 +8,9 @@ import (
 )
 
 func main() {
-	fmt.Println("Hello World")
+	n, error := fmt.Println("Hello World")
+	if error != nil {
+		fmt.Println("Salida de n: ", n)
+		fmt.Println("Salida de error: ", error)
+	}
 }
